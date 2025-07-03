@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manas Jha | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Manas Jha</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Computer Science Student | Developer | Intern @ Accenture</h2>
+            <p id="typed-text" class="typing-animation"></p>
+
+            <div class="hero-buttons">
+                <button class="btn" onclick="showResumeModal()">Resume</button>
+
+                <a href="https://github.com/manasjha04385" target="_blank">
+                    <button class="btn">GitHub</button>
+                </a>
+
+                <a href="https://linkedin.com/in/manas-jha-09972724b" target="_blank">
+                    <button class="btn">LinkedIn</button>
+                </a>
+            </div>
+        </div>
+        <div id="resumeModal" class="modal">
+        <span class="modal-close" onclick="closeResumeModal()">×</span>
+        <div class="modal-content-wrapper">
+            <iframe src="Manas_Jha_Resume.pdf" class="resume-preview"></iframe>
+            <a href="Manas_Jha_Resume.pdf" download title="Download Resume">
+                <img src="download.jpg" class="download-icon" alt="Download Resume" style="width: 24px; height: 24px"/>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            I’m a CSE student at C.V. Raman Global University with internship experience at Accenture and Central
+            Coalfields Limited. I'm skilled in full-stack development, API integration, and real-time systems.
+            Passionate about building impactful tech solutions.
+        </p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">Languages</div>
+                    <div class="flip-back">Java, C, Python, HTML, CSS, JavaScript</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">Web</div>
+                    <div class="flip-back">REST APIs, Responsive Frontend Design</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">Tools/OS</div>
+                    <div class="flip-back">Linux/Ubuntu, Git, Postman</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">Practices</div>
+                    <div class="flip-back">TDD, Secure SDLC, Real-time Data</div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">Databases</div>
+                    <div class="flip-back">MySQL, Firebase, CouchDB</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Internships</h2>
+        <div class="card">
+            <h3>Application Development Intern – Accenture</h3>
+            <p>Real-time API-integrated web solutions with CouchDB and mobile-first design. (May 2025 – Present)</p>
+        </div>
+        <div class="card">
+            <h3>Front-End Intern – Central Coalfields Limited</h3>
+            <p>Designed dashboards to track student/employee stats using Java and CSS. (June 2024 – July 2024)</p>
+        </div>
+        <div class="card">
+            <h3>Project Coordinator – PRATIGYA (NGO)</h3>
+            <p>Managed public events and documentation. (July 2023 – August 2023)</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="rw.jpg" alt="Project Image">
+                <div class="project-overlay">
+                    <h3>Real-World Web Solutions</h3>
+                    <p>Built responsive web apps with CouchDB & API-based call classification. Used by TM Forum.</p>
+                    <span class="project-tags">HTML • JS • CouchDB</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="em.jpg" alt="Project Image">
+                <div class="project-overlay">
+                    <h3>Employee Management System</h3>
+                    <p>Java-based desktop app to manage employee data, attendance and performance records.</p>
+                    <span class="project-tags">Java • HTML • JS</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="sm.jpg" alt="Project Image">
+                <div class="project-overlay">
+                    <h3>Student Dashboard - CCL</h3>
+                    <p>Internship project using Java + CSS to display employee/student KPIs via dashboard widgets.</p>
+                    <span class="project-tags">Java • CSS • Git</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>C.V. Raman Global University</strong> – B.Tech CSE (2022 – 2026)</li>
+            <li><strong>Oxford Public School, Ranchi</strong> – Class XII, CBSE (2022)</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate, have questions, or just want to say hello, feel free to drop me a message!</p>
+
+        <form action="hhttps://formspree.io/f/xovwbejz" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 Manas Jha. All Rights Reserved.
+        </div>
+    </footer>
+
+    
+<script src="script.js"></script>
+
+    <script>
+        function showResumeModal() {
+            document.getElementById('resumeModal').style.display = 'flex';
+        }
+        function closeResumeModal() {
+            document.getElementById('resumeModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
